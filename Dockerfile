@@ -17,7 +17,21 @@ COPY . .
 RUN yarn build
 
 # Start a new stage for production
-FROM httpd:2.4
+FROM node:18-alpine
 
-# Copy the build output from the previous stage
-COPY --from=build /app/build /usr/local/apache2/htdocs/
+WORKDIR /app
+
+# Copy package.json and yarn.lock
+COPY package.json yarn.lock ./
+
+# Install production dependencies
+RUN yarn install --production
+
+# Copy the .next directory from the previous stage
+COPY --from=build /app/.next ./.next
+
+# Copy the public directory from the previous stage (if you have one)
+COPY --from=build /app/public ./public
+
+# Start the application
+CMD ["yarn", "start"]

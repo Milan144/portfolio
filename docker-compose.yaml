@@ -4,11 +4,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      target: base
-    expose:
-      - '80'
+      target: production
     ports:
       - '80:80'
-    volumes:
-      - ./src/:/home/node/app/src
-    command: npm run dev

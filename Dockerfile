@@ -1,8 +1,8 @@
 # Use node:18-alpine as base image
-FROM node:18-alpine as base
+FROM node:18-alpine as build
 
 # Set working directory
-WORKDIR /home/node/app
+WORKDIR /app
 
 # Copy package.json and yarn.lock
 COPY package.json yarn.lock ./
@@ -17,10 +17,7 @@ COPY . .
 RUN yarn build
 
 # Start a new stage for production
-FROM nginx:alpine as production
+FROM httpd:2.4
 
 # Copy the build output from the previous stage
-COPY --from=base /home/node/app/build /usr/share/nginx/html
-
-# Copy the Nginx configuration file
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /app/build /usr/local/apache2/htdocs/

@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    expose:
+      - '80'
+    ports:
+      - '80:80'
+    volumes:
+      - ./src/:/home/node/app/src
+    command: npm run dev

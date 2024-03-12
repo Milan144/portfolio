@@ -1,4 +1,15 @@
-# Dockerfile.nginx
+# Define the builder stage
+FROM node:14-alpine AS builder
+
+WORKDIR /app
+
+COPY package.json yarn.lock ./
+RUN yarn install --frozen-lockfile
+
+COPY . .
+RUN yarn build
+
+# Define the nginx stage
 FROM nginx:alpine
 
 COPY --from=builder /app/.next /usr/share/nginx/html

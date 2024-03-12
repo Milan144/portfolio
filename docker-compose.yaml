@@ -10,3 +10,5 @@ services:
       - '3000:3000'
     volumes:
       - ./src/:/home/node/app/src
+    environment:
+    - "VIRTUAL_HOST=hommet.ch"

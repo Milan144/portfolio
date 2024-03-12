@@ -15,3 +15,15 @@ services:
       - '80:80'
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.portfolio.rule=Host(`n0k.fr`)'
+      - 'traefik.http.routers.portfolio.entrypoints=https'
+      - 'traefik.http.routers.portfolio.tls.certresolver=letsencrypt'
+      - 'traefik.http.routers.portfolio.service=portfolio-service'
+      - 'traefik.http.services.portfolio-service.loadbalancer.server.port=80'
+    networks:
+      - docknet
+
+networks:
+  docknet:

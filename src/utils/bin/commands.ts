@@ -80,10 +80,6 @@ export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
 };
 
-export const vim = async (args: string[]): Promise<string> => {
-  return `'The best code editor !`;
-};
-
 // Banner
 export const banner = (args?: string[]): string => {
   return `

@@ -25,7 +25,7 @@ const App = ({ Component, pageProps }) => {
         onClick={onClickAnywhere}
       >
         <main
-          className="bg-light-background dark:bg-dark-background w-full h-full p-2 md:p-4"
+          className="bg-light-background dark:bg-dark-background w-full h-full p-2 md:p-4 lg:p-8 xl:p-10 2xl:p-12"
           style={{
             display: 'flex',
             flexDirection: 'column',

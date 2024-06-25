@@ -11,9 +11,9 @@
   "resume_url": "cv.pdf",
   "colors": {
     "light": {
-      "background": "#A5ADCE",  "foreground": "#303446",  "yellow": "#E5C890",  "green": "#A6D189",  "gray": "#737994",    "blue": "#8CAAEE",    "red": "#E78284"     },
+      "background": "#24292e",  "foreground": "#d1d5da",  "yellow": "#ffea7f",  "green": "#34d058",  "gray": "#d1d5da",    "blue": "#2188ff",    "red": "#ea4a5a"     },
     "dark": {
-      "background": "#303446",  "foreground": "#C6D0F5",  "yellow": "#EF9F76",    "green": "#81C8BE",    "gray": "#414559",    "blue": "#BABBF1",    "red": "#EA999C"     }
+      "background": "#24292e",  "foreground": "#d1d5da",  "yellow": "#ffea7f",    "green": "#34d058",    "gray": "#d1d5da",    "blue": "#2188ff",    "red": "#ea4a5a"     }
   }
 }
 

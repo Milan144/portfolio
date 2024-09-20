@@ -2,10 +2,10 @@
 
 /* Color Palette */
 * {
-  background: #191724;
+  background: #eff1f5; /* Base */
   font-family: 'JetBrains Mono', monospace;
   font-weight: 500;
-  color: #e0def4;
+  color: #4c4f69; /* Text */
 }
 
 body {
@@ -21,38 +21,42 @@ h3 {
   font-size: inherit;
   padding: 0 0.5em;
   margin-bottom: 0;
-  background-color: #403d52;
-  color: #e0def4;
+  background-color: #ea7676; /* Overlay0 */
+  color: white; /* Text */
 }
 
 a {
-  color: #ebbcba;
+  color: #ea7676;
   text-decoration: none;
 }
 
 footer {
-  color: #1f1d2e;
+  color: #dce0e8; /* Crust */
   margin-top: auto;
 }
 
 .text-secondary {
-  color: #908caa;
+  color: #5c5f77; /* Subtext1 */
 }
 
 .linkedin:hover {
-  color: #9ccfd8;
+  color: #04a5e5; /* Sky */
 }
 
 .github:hover {
-  color: #31748f;
+  color: #1e66f5; /* Blue */
+}
+
+.teicee:hover {
+  color: green;
 }
 
 .charm:hover {
-  color: #eb6f92;
+  color: #d20f39; /* Red */
 }
 
 .cursor {
-  color: #ebbcba;
+  color: #ea7676;
 }
 
 .output {
@@ -66,7 +70,7 @@ footer {
   animation: typing 2s steps(25), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 10px solid #ebbcba;
+  border-right: 10px solid #ea7676;
 }
 
 /* animation */
@@ -81,7 +85,7 @@ footer {
   0% { width: 0; }
   100% { width: 30ch; }
 }
-    
+
 @keyframes blink {
   50% { border-color: transparent;}
 }
@@ -99,7 +103,7 @@ footer {
   padding-top: 1rem;
   animation: fade 5s;
   img {
-    border: 1px solid #ebbcba;
+    border: 1px solid #ea7676;
     border-radius: 5px;
     width: 100%;
     height: auto;
@@ -132,7 +136,7 @@ footer {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #e0def4;
+  color: #4c4f69; /* Text */
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -140,7 +144,7 @@ footer {
 
 .close:hover,
 .close:focus {
-  color: #6e6a86;
+  color: #6c6f85; /* Subtext0 */
   text-decoration: none;
   cursor: pointer;
 }

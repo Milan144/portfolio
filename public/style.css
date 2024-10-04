@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
 
-/* Color Palette */
+/* Color Palette based on your provided colors */
 * {
-  background: #eff1f5; /* Base */
+  background: #191724; /* Background */
   font-family: 'JetBrains Mono', monospace;
   font-weight: 500;
-  color: #4c4f69; /* Text */
+  color: #e0def4; /* Foreground */
 }
 
 body {
@@ -14,6 +14,8 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
+  color: #e0def4; /* Bright Foreground */
+  background-color: #191724; /* Background */
 }
 
 h3 {
@@ -21,42 +23,38 @@ h3 {
   font-size: inherit;
   padding: 0 0.5em;
   margin-bottom: 0;
-  background-color: #ea7676; /* Overlay0 */
-  color: white; /* Text */
+  background-color: #eb6f92; /* Red */
+  color: #e0def4; /* Bright Foreground */
 }
 
 a {
-  color: #ea7676;
+  color: #eb6f92; /* Red */
   text-decoration: none;
 }
 
 footer {
-  color: #dce0e8; /* Crust */
+  color: #908caa; /* Dim Foreground */
   margin-top: auto;
 }
 
 .text-secondary {
-  color: #5c5f77; /* Subtext1 */
+  color: #6e6a86; /* Subtext1 */
 }
 
 .linkedin:hover {
-  color: #04a5e5; /* Sky */
+  color: #2867b2;
 }
 
 .github:hover {
-  color: #1e66f5; /* Blue */
+  color: #6cb4ee;
 }
 
 .teicee:hover {
-  color: green;
-}
-
-.charm:hover {
-  color: #d20f39; /* Red */
+  color: #a1e56a;
 }
 
 .cursor {
-  color: #ea7676;
+  color: #eb6f92; /* Red */
 }
 
 .output {
@@ -70,7 +68,7 @@ footer {
   animation: typing 2s steps(25), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 10px solid #ea7676;
+  border-right: 10px solid #eb6f92; /* Red */
 }
 
 /* animation */
@@ -103,7 +101,7 @@ footer {
   padding-top: 1rem;
   animation: fade 5s;
   img {
-    border: 1px solid #ea7676;
+    border: 1px solid #eb6f92; /* Red */
     border-radius: 5px;
     width: 100%;
     height: auto;
@@ -136,7 +134,7 @@ footer {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #4c4f69; /* Text */
+  color: #e0def4; /* Bright Foreground */
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -144,7 +142,7 @@ footer {
 
 .close:hover,
 .close:focus {
-  color: #6c6f85; /* Subtext0 */
+  color: #6e6a86; /* Subtext0 */
   text-decoration: none;
   cursor: pointer;
 }

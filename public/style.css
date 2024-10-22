@@ -2,10 +2,10 @@
 
 /* Color Palette based on your provided colors */
 * {
-  background: #191724; /* Background */
+  background: #1E1E2E; /* Background */
   font-family: 'JetBrains Mono', monospace;
   font-weight: 500;
-  color: #e0def4; /* Foreground */
+  color: #CDD6F4; /* Foreground */
 }
 
 body {
@@ -14,8 +14,8 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
-  color: #e0def4; /* Bright Foreground */
-  background-color: #191724; /* Background */
+  color: #CDD6F4; /* Bright Foreground */
+  background-color: #1E1E2E; /* Background */
 }
 
 h3 {
@@ -23,38 +23,38 @@ h3 {
   font-size: inherit;
   padding: 0 0.5em;
   margin-bottom: 0;
-  background-color: #eb6f92; /* Red */
-  color: #e0def4; /* Bright Foreground */
+  background-color: #F38BA8; /* Red */
+  color: #CDD6F4; /* Bright Foreground */
 }
 
 a {
-  color: #eb6f92; /* Red */
+  color: #F38BA8; /* Red */
   text-decoration: none;
 }
 
 footer {
-  color: #908caa; /* Dim Foreground */
+  color: #A6ADC8; /* Dim Foreground */
   margin-top: auto;
 }
 
 .text-secondary {
-  color: #6e6a86; /* Subtext1 */
+  color: #BAC2DE; /* Subtext1 */
 }
 
 .linkedin:hover {
-  color: #2867b2;
+  color: #89B4FA; /* Blue */
 }
 
 .github:hover {
-  color: #6cb4ee;
+  color: #94E2D5; /* Cyan */
 }
 
 .teicee:hover {
-  color: #a1e56a;
+  color: #A6E3A1; /* Green */
 }
 
 .cursor {
-  color: #eb6f92; /* Red */
+  color: #F38BA8; /* Red */
 }
 
 .output {
@@ -68,7 +68,7 @@ footer {
   animation: typing 2s steps(25), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 10px solid #eb6f92; /* Red */
+  border-right: 10px solid #F38BA8; /* Red */
 }
 
 /* animation */
@@ -101,7 +101,7 @@ footer {
   padding-top: 1rem;
   animation: fade 5s;
   img {
-    border: 1px solid #eb6f92; /* Red */
+    border: 1px solid #F38BA8; /* Red */
     border-radius: 5px;
     width: 100%;
     height: auto;
@@ -134,7 +134,7 @@ footer {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #e0def4; /* Bright Foreground */
+  color: #CDD6F4; /* Bright Foreground */
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -142,7 +142,8 @@ footer {
 
 .close:hover,
 .close:focus {
-  color: #6e6a86; /* Subtext0 */
+  color: #BAC2DE; /* Subtext0 */
   text-decoration: none;
   cursor: pointer;
 }
+

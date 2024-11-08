@@ -161,10 +161,13 @@ footer {
 }
 
 #github-projects a {
-  color: #89B4FA; /* Blue */
   text-decoration: none;
 }
 
 #github-projects a:hover {
+  color: #94E2D5; /* Cyan */
+}
+
+#cv a:hover {
   color: #94E2D5; /* Cyan */
 }

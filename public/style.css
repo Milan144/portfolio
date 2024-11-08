@@ -147,3 +147,24 @@ footer {
   cursor: pointer;
 }
 
+.projects {
+  margin-top: 2rem;
+}
+
+#github-projects {
+  list-style: none;
+  padding: 0;
+}
+
+#github-projects li {
+  margin: 0.5rem 0;
+}
+
+#github-projects a {
+  color: #89B4FA; /* Blue */
+  text-decoration: none;
+}
+
+#github-projects a:hover {
+  color: #94E2D5; /* Cyan */
+}

@@ -171,3 +171,7 @@ footer {
 #cv a:hover {
   color: #94E2D5; /* Cyan */
 }
+
+body {
+  border: 1px solid #F38BA8;
+}
